@@ -3,4 +3,4 @@ a = ''
 for i in range (97,123):
     if chr(i) != 'e' and chr(i) !='q'
         a += chr(i)
-print(a,end="")
+print('{}'.format(a),end="")
