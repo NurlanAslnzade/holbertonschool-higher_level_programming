@@ -1,0 +1,7 @@
+def uppercase(str):
+    a = ''
+    for i in str:
+        if 'a' <= i <= 'z':
+            i = chr(ord(i) - 32)
+        a += i
+    print('{}'.format(a))
