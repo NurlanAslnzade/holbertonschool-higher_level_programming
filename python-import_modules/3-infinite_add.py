@@ -8,5 +8,5 @@ if __name__ == "__main__":
         print("0")
     else:
         for i in range(1, len(sys.argv)):
-            a += int(sys.argv[1]
+            a += int(sys.argv[1])
         print("{:d}".format(a))
