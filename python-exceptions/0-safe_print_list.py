@@ -2,7 +2,7 @@
 
 def safe_print_list(my_list=[], x=0):
     a = 0
-    for i in range(1, x):
+    for i in range(1, x+1):
         try:
             print('{:d}'.format(i), end = '')
             a += 1
