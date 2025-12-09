@@ -49,5 +49,5 @@ class Rectangle:
             return ""
         siyahi = []
         for _ in range(self.__height):
-            siyahi.append(self.__width * #)
-        return "/n".join(siyahi)
+            siyahi.append(self.__width * "#")
+        return "\n".join(siyahi)
