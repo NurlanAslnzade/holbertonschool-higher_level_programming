@@ -1,31 +1,35 @@
 #!/usr/bin/python3
 
 class Rectangle:
-    
+    """Represent a rectangle with width and height."""
+
     def __init__(self, width=0, height=0):
-        self.__width = width
-        self.__height = height
-    
+        """Initialize a new Rectangle instance."""
+        self.width = width
+        self.height = height
+
     @property
-    def (self, width):
+    def width(self):
+        """Get the width of the rectangle."""
         return self.__width
-        
+
     @width.setter
-    def (self, width):
-        if is not isinstance(width, int):
+    def width(self, value):
+        if not isinstance(value, int):
             raise TypeError("width must be an integer")
-        if width < 0:
-            raise ValueErrro("width must be >= 0")
-        self.__width = width
-        
+        if value < 0:
+            raise ValueError("width must be >= 0")
+        self.__width = value
+
     @property
-    def (self, height):
+    def height(self):
+        """Get the height of the rectangle."""
         return self.__height
-        
+
     @height.setter
-    def (self, height):
-        if is not isinstance(height, int):
-            raise TypeError("width must be an integer")
-        if height < 0:
-            raise ValueErrro("width must be >= 0")
-        self.__height = height
+    def height(self, value):
+        if not isinstance(value, int):
+            raise TypeError("height must be an integer")
+        if value < 0:
+            raise ValueError("height must be >= 0")
+        self.__height = value
