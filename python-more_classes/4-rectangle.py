@@ -57,5 +57,5 @@ class Rectangle:
             return ""
             a = []
         for _ in range(self.__height):
-            a.append(self.__width * "#"):
+            a.append(self.__width * "#")
         return "\n".join(a)
