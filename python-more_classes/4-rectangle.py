@@ -35,7 +35,7 @@ class Rectangle:
         if value < 0:
             raise ValueError("height must be >= 0")
         self.__height = value
-    
+
     def area(self):
         return self.__height * self.width
 
@@ -43,7 +43,7 @@ class Rectangle:
         if self.width == 0 or self.height == 0:
             return 0
         return (self.__height + self.__width) * 2
-        
+
     def __str__(self):
         if self.__width == 0 or self.__height == 0:
             return ""
@@ -51,6 +51,6 @@ class Rectangle:
         for _ in range(self.__height):
             siyahi.append(self.__width * "#")
         return "\n".join(siyahi)
-    
+
     def __repr__(self):
         return "Rectangle({}, {})".format(self.__width, self.__height)
