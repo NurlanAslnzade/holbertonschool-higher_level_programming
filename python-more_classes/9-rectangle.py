@@ -40,38 +40,46 @@ class Rectangle:
         self.__height = value
     
     def area(self):
-        return self.__height * self.width
+        """Return the area of the rectangle."""
+        return self.__height * self.__width
 
     def perimeter(self):
-        if self.width == 0 or self.height == 0:
+        """Return the perimeter of the rectangle."""
+        if self.__width == 0 or self.__height == 0:
             return 0
         return (self.__height + self.__width) * 2
         
     def __str__(self):
+        """Return a string representation of the rectangle."""
         if self.__width == 0 or self.__height == 0:
             return ""
-        siyahi = []
+        rows = []
         for _ in range(self.__height):
-            siyahi.append(self.__width * str(self.print_symbol))
-        return "\n".join(siyahi)
-
+            rows.append(self.__width * str(self.print_symbol))
+        return "\n".join(rows)
+    
     def __repr__(self):
+        """Return a formal string representation of the rectangle."""
         return "Rectangle({}, {})".format(self.__width, self.__height)
-
+    
     def __del__(self):
-        print("Bye rectangle...")  
+        """Delete the rectangle instance."""
+        print("Bye rectangle...")
         Rectangle.number_of_instances -= 1
         del self
 
     @staticmethod
     def bigger_or_equal(rect_1, rect_2):
-        if not isinstance(rect_2, Rectangle):
-            raise TypeError("rect_2 must be an instance of Rectangle")
+        """Return the rectangle with the largest area."""
         if not isinstance(rect_1, Rectangle):
             raise TypeError("rect_1 must be an instance of Rectangle")
+        if not isinstance(rect_2, Rectangle):
+            raise TypeError("rect_2 must be an instance of Rectangle")
         if rect_1.area() >= rect_2.area():
             return rect_1
+        return rect_2  # Return rect_2 if rect_1 is not bigger
 
     @classmethod
     def square(cls, size=0):
+        """Return a new Rectangle instance as a square."""
         return cls(size, size)
