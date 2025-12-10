@@ -55,7 +55,7 @@ class Rectangle:
     def __repr__(self):
         if self.__width == 0 or self.__height == 0:
             return ""
-            a = []
+            siyahi = []
         for _ in range(self.__height):
-            a.append(self.__width * "#")
-        return "\n".join(a)
+            siyahi.append(self.__width * "#")
+        return "\n".join(siyahi)
