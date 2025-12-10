@@ -38,7 +38,7 @@ class Rectangle:
         if value < 0:
             raise ValueError("height must be >= 0")
         self.__height = value
-    
+
     def area(self):
         """Return the area of the rectangle."""
         return self.__height * self.__width
@@ -48,7 +48,7 @@ class Rectangle:
         if self.__width == 0 or self.__height == 0:
             return 0
         return (self.__height + self.__width) * 2
-        
+
     def __str__(self):
         """Return a string representation of the rectangle."""
         if self.__width == 0 or self.__height == 0:
@@ -57,11 +57,11 @@ class Rectangle:
         for _ in range(self.__height):
             rows.append(self.__width * str(self.print_symbol))
         return "\n".join(rows)
-    
+
     def __repr__(self):
         """Return a formal string representation of the rectangle."""
         return "Rectangle({}, {})".format(self.__width, self.__height)
-    
+ 
     def __del__(self):
         """Delete the rectangle instance."""
         print("Bye rectangle...")
