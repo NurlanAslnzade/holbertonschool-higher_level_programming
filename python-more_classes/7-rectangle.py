@@ -52,7 +52,7 @@ class Rectangle:
             return ""
         siyahi = []
         for _ in range(self.__height):
-            siyahi.append(self.__width * self.print_symbol)
+            siyahi.append(self.__width * str(self.print_symbol))
         return "\n".join(siyahi)
 
     def __repr__(self):
