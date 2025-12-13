@@ -4,5 +4,5 @@
 
 class BaseGeometry:
     """asda"""
-    def area():
+    def area(self):
         raise Exception("area() is not implemented")
