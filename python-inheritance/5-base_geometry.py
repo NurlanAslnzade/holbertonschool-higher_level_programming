@@ -4,4 +4,4 @@
 
 class BaseGeometry:
     """asda"""
-    def __init__(self):
+    pass
