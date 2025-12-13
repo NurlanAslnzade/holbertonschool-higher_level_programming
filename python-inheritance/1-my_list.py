@@ -1,3 +1,4 @@
+#!/usr/bin/python3
 """nese olsun"""
 
 class Mylist(list):
