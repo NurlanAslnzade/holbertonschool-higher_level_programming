@@ -2,6 +2,6 @@
 """nese olsun"""
 
 
-def is_same_class(obj, a_classi):
+def is_same_class(obj, a_class):
     """asda"""
     return type(obj) is a_class
