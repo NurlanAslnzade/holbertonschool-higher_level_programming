@@ -1,7 +1,10 @@
 #!/usr/bin/python3
-"""nese olsun"""
+"""Module"""
 
-class Mylist(list):
-    """neseed burada olsun"""
+
+class MyList(list):
+    """MyList"""
+
     def print_sorted(self):
+        """Print"""
         print(sorted(self))
