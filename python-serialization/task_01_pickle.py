@@ -9,20 +9,23 @@ class CustomObject:
         self.is_student = is_student
 
     def display(self):
-        print(f"Name: {self.name}")
-        print(f"Age {self.age}")
-        print(f"Is student {self.is_student}")
+        print("Name: {}".format(self.name))
+        print("Age: {}".format(self.age))
+        print("Is Student: {}".format(self.is_student))
 
     def serialize(self, filename):
         try:
             with open(filename, "wb") as f:
-            pickle.dump(self, f)
-        except FileNotFoundError:
+                pickle.dump(self, f)
+        except Exception as e:
+            print("Error: {}".format(e))
             return None
 
-@classmethod
+    @classmethod
     def deserialize(cls, filename):
         try:
             with open(filename, "rb") as f:
-        except:
+                return pickle.load(f)
+        except Exception as e:
+            print("Error: {}".format(e))
             return None
