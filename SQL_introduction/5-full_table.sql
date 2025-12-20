@@ -1,2 +1,2 @@
 -- nese
-SHOW CREATE TABLE firs_table;
+SHOW CREATE TABLE first_table;
