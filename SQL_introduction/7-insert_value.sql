@@ -1,3 +1,3 @@
 -- s
-INSERT INTO first_table(id, name)
-VALUES ("Best School", 89);
+INSERT INTO first_table (id, name)
+VALUES (89,  "Best School");
