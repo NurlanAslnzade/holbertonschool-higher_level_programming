@@ -1,0 +1,2 @@
+-- table gostremk
+SHOW TABLES;
